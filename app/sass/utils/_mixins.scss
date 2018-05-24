@@ -1,0 +1,91 @@
+
+// Fonts
+
+@mixin lato-reg {
+  font-family: $Lato;
+  font-weight: normal;
+}
+@mixin lato-semi {
+  font-family: $Lato;
+  font-weight: 600;
+}
+@mixin lato-heavy {
+  font-family: $Lato;
+  font-weight: 800;
+}
+@mixin PTSansReg {
+  font-family: $PTSans;
+  font-weight: normal;
+}
+@mixin PTSansBold {
+  font-family: $PTSans;
+  font-weight: bold;
+}
+
+
+// Placeholders mixins
+
+@mixin placeholder {
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+@mixin placeholder-focus {
+  &:focus:-moz-placeholder { @content; }
+  &:focus::-moz-placeholder { @content; }
+  &:focus:-ms-input-placeholder { @content; }
+  &:focus::-webkit-input-placeholder { @content; }
+}
+
+
+// Flex mixins
+
+@mixin flex() {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+
+// Media queries mixins
+
+@mixin respond-to($media) {
+  @if $media == sm {
+    @media only screen and (max-width: $sm) { @content; }
+  }
+  @else if $media == md {
+    @media only screen and (max-width: $md) { @content; }
+  }
+  @else if $media == lg {
+    @media (max-width: $lg) { @content; }
+  }
+}
+
+
+// Mixins for links
+
+@mixin links ($link, $active) {
+  & {
+    color: $link;
+    transition: .2s;
+    &:visited {
+      color: $active;
+    }
+    &:hover {
+      color: $active;
+    }
+    &:active, &:focus {
+      color: $active;
+    }
+  }
+}

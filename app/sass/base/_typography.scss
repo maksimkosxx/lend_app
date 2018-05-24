@@ -1,0 +1,41 @@
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Heavy.woff') format('woff'),
+  url('../fonts/Lato/Lato-Heavy.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Black.woff') format('woff'),
+  url('../fonts/Lato/Lato-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Semibold.woff') format('woff'),
+  url('../fonts/Lato/Lato-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/PTSans/PTSans-Bold.woff') format('woff'),
+  url('../fonts/PTSans/PTSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/PTSans/PTSans-Regular.woff') format('woff'),
+  url('../fonts/PTSans/PTSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+

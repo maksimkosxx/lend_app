@@ -1,0 +1,32 @@
+html {
+  @include respond-to(sm) {
+    height: 100%;
+  }
+}
+body {
+  @include PTSansReg;
+  color: $black;
+  @include respond-to(sm) {
+    height: 100%;
+  }
+}
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+a {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+
