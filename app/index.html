@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <title>Лендинг Моя Москва</title>
+  <title>МосЛендос</title>
   <meta name="description" content="Новости о Москве и для Москвы из первых уст">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,34 +17,43 @@
   <link href="https://www.mos.ru/static/images/favicon/icon192x192.png?" rel="icon" sizes="192x192">
 
   <link rel="stylesheet" href="/css/main.min.css">
-
-
 </head>
-
-
-
 <body>
 
 <header class="header">
   <div class="header-column header-column-left">
-    <div class="header-icon">
-      <img src="/img/icons/logo/logo.svg" alt="mos.ru">
+    <div class="header-column__wrapper">
+      <div class="header-icon">
+        <img src="/img/icons/logo/logo.svg" alt="mos.ru">
+      </div>
+      <h1 class="header-title">Моя Москва</h1>
+      <div class="header-description">Мобильное приложение</div>
+      <ul class="header-advantages">
+        <li>Пользуйтесь самыми нужными сервисами</li>
+        <li>Консультируйтесь в&nbsp;круглосуточном чате с&nbsp;операторами</li>
+        <li>Читайте главные новости Москвы</li>
+      </ul>
+      <div class="header-downloads">
+        <a href="#" class="header-downloads__link header-downloads__link-app"></a>
+        <a href="#" class="header-downloads__link header-downloads__link-play"></a>
+      </div>
+      <div class="header-form">
+        <form action="#" method="post">
+          <label for="phone" class="header-form__title">Получить ссылку для установки на телефон</label>
+          <span class="header-form__prefix">+7 </span>
+          <input id="phone" type="tel" name="phone" class="header-form__phone" required>
+          <input type="submit" value="Получить SMS" class="header-form__submit">
+        </form>
+      </div>
     </div>
-    <h1 class="header-title">Моя Москва</h1>
-    <div class="header-description">Мобильное приложение</div>
-    <ul class="header-advantages">
-      <li>Пользуйтесь самыми нужными сервисами</li>
-      <li>Консультируйтесь в&nbsp;круглосуточном чате с&nbsp;операторами</li>
-      <li>Читайте главные новости Москвы</li>
-    </ul>
-    <div class="header-downloads">
-      <a href="#" class="header-downloads__link header-downloads__link-app"></a>
-      <a href="#" class="header-downloads__link header-downloads__link-play"></a>
-    </div>
-    <div class="header-link"></div>
   </div>
   <div class="header-column header-column-center">
-    <div class="iphone"></div>
+    <div class="iphone">
+      <div class="iphone-border">
+        <div class="iphone-screen iphone-screen-chat1"></div>
+        <div class="iphone-btn"></div>
+      </div>
+    </div>
   </div>
   <div class="header-column header-column-right">
     <a href="/" class="header-logo">
