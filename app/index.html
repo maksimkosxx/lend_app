@@ -19,57 +19,133 @@
   <link rel="stylesheet" href="/css/main.min.css">
 </head>
 <body>
-
-<header class="header">
-  <div class="header-column header-column-left">
-    <div class="header-column__wrapper">
-      <div class="header-icon">
-        <img src="/img/icons/logo/logo.svg" alt="mos.ru">
-      </div>
-      <h1 class="header-title">Моя Москва</h1>
-      <div class="header-description">Мобильное приложение</div>
-      <ul class="header-advantages">
+<div class="hero">
+  <div class="hero-column hero-column-left">
+    <div class="main-info ">
+      <div class="main-info__icon"></div>
+      <h1 class="main-info__title">Моя Москва</h1>
+      <div class="main-info__description">Мобильное приложение</div>
+      <ul class="main-info__advantages">
         <li>Пользуйтесь самыми нужными сервисами</li>
         <li>Консультируйтесь в&nbsp;круглосуточном чате с&nbsp;операторами</li>
         <li>Читайте главные новости Москвы</li>
       </ul>
-      <div class="header-downloads">
-        <a href="#" class="header-downloads__link header-downloads__link-app"></a>
-        <a href="#" class="header-downloads__link header-downloads__link-play"></a>
+      <div class="main-info__downloads">
+        <a href="#" class="main-info__link main-info__link-app"></a>
+        <a href="#" class="main-info__link main-info__link-play"></a>
       </div>
-      <div class="header-form">
-        <form action="#" method="post">
-          <label for="phone" class="header-form__title">Получить ссылку для установки на телефон</label>
-          <span class="header-form__prefix">+7 </span>
-          <input id="phone" type="tel" name="phone" class="header-form__phone" required>
-          <input type="submit" value="Получить SMS" class="header-form__submit">
+      <div class="main-info__form">
+        <form action="#" method="post" class="form">
+          <label for="phone" class="form-title">Получить ссылку для установки на телефон</label>
+          <span class="form-prefix">+7 </span>
+          <input id="phone" type="tel" name="phone" class="form-phone" required>
+          <input type="submit" value="Получить SMS" class="form-submit">
         </form>
       </div>
     </div>
   </div>
-  <div class="header-column header-column-center">
+  <div class="hero-column hero-column-center">
+    <div class="iphone">
+      <div class="iphone-border">
+        <div class="iphone-screen iphone-screen-chat1">
+          <div class="iphone-service"></div>
+        </div>
+        <div class="iphone-btn"></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-column hero-column-right">
+    <a href="/" class="hero-logo">
+      <span class="hero-logo__text">
+        город начинается здесь
+      </span>
+      <img src="/img/icons/logo/logo-mos.svg" alt="www.mos.ru" class="hero-logo__img">
+      <span class="hero-logo__title">mos.ru</span>
+    </a>
+  </div>
+  <div class="hero-images">
+    <img src="/img/icons/apple/doctor_2x.png" class="hero-images__doctor" alt="">
+    <img src="/img/icons/apple/home_2x.png" class="hero-images__home" alt="">
+    <img src="/img/icons/apple/car_2x.png" class="hero-images__car" alt=""></div>
+</div>
+<section class="slider">
+  <div class="slider-title">Город говорит!</div>
+  <div class="slider-description">
+    Пользуйтесь самыми нужными сервисами, консультируйтесь в&nbsp;круглосуточном чате с&nbsp;операторами
+    и&nbsp;читайте главные новости Москвы в&nbsp;одном приложении
+  </div>
+  <div class="slider-content">
     <div class="iphone">
       <div class="iphone-border">
         <div class="iphone-screen iphone-screen-chat1"></div>
         <div class="iphone-btn"></div>
       </div>
     </div>
+    <div class="slider-items">
+      <div class="slider-item"></div>
+      <div class="slider-item"></div>
+      <div class="slider-item"></div>
+      <div class="slider-item"></div>
+      <div class="slider-item"></div>
+    </div>
   </div>
-  <div class="header-column header-column-right">
-    <a href="/" class="header-logo">
-      <span class="header-logo__text">
-        город начинается здесь
-      </span>
-      <img src="/img/icons/logo/logo-mos.svg" alt="www.mos.ru" class="header-logo__img">
-      <span class="header-logo__title">mos.ru</span>
-    </a>
+</section>
+<section class="services">
+  <div class="services-tabs">
+    <div class="services-title">
+      Сервисы на&nbsp;каждый день
+    </div>
+    <a href="#" class="services-tabs__item">Новости города</a>
+    <a href="#" class="services-tabs__item active">Здравоохранение</a>
+    <a href="#" class="services-tabs__item">Дети в школе</a>
+    <a href="#" class="services-tabs__item">Мой дом</a>
   </div>
-  <div class="header-images">
-    <img src="/img/icons/apple/doctor_2x.png" class="header-images__doctor" alt="">
-    <img src="/img/icons/apple/home_2x.png" class="header-images__home" alt="">
-    <img src="/img/icons/apple/car_2x.png" class="header-images__car" alt=""></div>
-</header>
-
+  <div class="services-content">
+    <div class="iphone">
+      <div class="iphone-border">
+        <div class="iphone-screen iphone-screen-chat2"></div>
+        <div class="iphone-btn"></div>
+      </div>
+    </div>
+    <div class="services-content__info">
+      <div class="services-content__image">
+        <img src="/img/icons/apple/doctor_2x.png" alt="">
+      </div>
+      <div class="services-content__text">
+        Записывайтесь к&nbsp;врачу за&nbsp;пару минут.
+        Переносите или отменяйте запись на&nbsp;прием, когда вам удобно.
+        Наш <span>бот-помощник</span> всегда подскажет, что&nbsp;делать&nbsp;дальше.
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-column footer-column-left">
+    <div class="main-info ">
+      <div class="main-info__icon main-info__icon-red"></div>
+      <h1 class="main-info__title">Моя Москва</h1>
+      <div class="main-info__description">Мобильное приложение</div>
+      <ul class="main-info__advantages">
+        <li>Пользуйтесь самыми нужными сервисами</li>
+        <li>Консультируйтесь в&nbsp;круглосуточном чате с&nbsp;операторами</li>
+        <li>Читайте главные новости Москвы</li>
+      </ul>
+      <div class="main-info__downloads">
+        <a href="#" class="main-info__link main-info__link-app main-info__link-black"></a>
+        <a href="#" class="main-info__link main-info__link-play main-info__link-black"></a>
+      </div>
+      <div class="main-info__form">
+        <form action="#" method="post" class="form">
+          <label for="phone" class="form-title">Получить ссылку для установки на телефон</label>
+          <span class="form-prefix">+7 </span>
+          <input id="phone" type="tel" name="phone" class="form-phone" required>
+          <input type="submit" value="Получить SMS" class="form-submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+<a href="#" class="scroll-down"></a>
 
 </body>
 </html>

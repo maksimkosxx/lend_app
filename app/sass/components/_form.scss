@@ -1,0 +1,50 @@
+.form {
+  margin-top: 36px;
+  @include PTSansReg;
+  &-title {
+    display: block;
+    margin-bottom: 12px;
+    opacity: 0.7;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &-prefix {
+    vertical-align: middle;
+    margin-right: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+  }
+  &-phone {
+    vertical-align: middle;
+    width: 115px;
+    margin-right: 16px;
+    padding: 0 2px;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    background: transparent;
+    outline: none;
+    caret-color: $white;
+    @include placeholder {
+      color: $white;
+    }
+  }
+  &-submit {
+    vertical-align: middle;
+    border: none;
+    outline: none;
+    @include PTSansBold;
+    font-size: 16px;
+    line-height: 20px;
+    background: transparent;
+    color: $white;
+    cursor: pointer;
+    transition: .2s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

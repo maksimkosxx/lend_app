@@ -89,3 +89,12 @@
     }
   }
 }
+
+
+// Events background items mixin
+
+//@for $i from 1 through 5 {
+//  .slider-item:nth-child(#{$i}) {
+//    background-image: url("/img/bubbles/Bubble-#{$i}.png");
+//  }
+//}

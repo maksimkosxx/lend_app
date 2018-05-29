@@ -1,0 +1,69 @@
+.services {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1652px;
+  min-height: 900px;
+  margin: 136px auto 0;
+  padding: 0 72px;
+  &-title {
+    max-width: 350px;
+    margin-bottom: 74px;
+    @include lato-heavy;
+    font-size: 62px;
+    line-height: 64px;
+  }
+  &-tabs {
+    margin-top: 88px;
+    &__item {
+      display: block;
+      max-width: 200px;
+      min-height: 46px;
+      margin-bottom: 27px;
+      border-radius: 100px;
+      border: 2px solid transparent;
+      box-shadow: 0 10px 20px 0 transparent;
+      @include PTSansBold;
+      font-size: 16px;
+      line-height: 46px;
+      letter-spacing: 0.23px;
+      text-align: center;
+      color: $black-light;
+      transition: .2s;
+      &.active {
+        border-color: $blue;
+        box-shadow: 0 2px 5px 0 #D9DEE5;
+        color: $black;
+        pointer-events: none;
+      }
+      &:hover {
+        background-color: #F2F2F2;
+        color: $black;
+      }
+    }
+  }
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+    .iphone {
+      flex: 1 0;
+    }
+    &__image {
+      img {
+        max-width: 104px;
+      }
+    }
+    &__text {
+      max-width: 370px;
+      margin-top: 170px;
+      font-size: 20px;
+      line-height: 30px;
+      color: $black-light;
+      span {
+        white-space: nowrap;
+      }
+    }
+  }
+}

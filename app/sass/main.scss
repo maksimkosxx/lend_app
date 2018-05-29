@@ -7,8 +7,13 @@
         'base/typography',
         'base/base';
 
-@import 'layout/header';
+@import 'layout/hero',
+        'layout/slider',
+        'layout/services',
+        'layout/footer';
 
-
-@import 'components/iphone';
+@import 'components/iphone',
+        'components/main-info',
+        'components/form',
+        'components/scroll-down';
 

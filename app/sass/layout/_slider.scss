@@ -1,0 +1,71 @@
+.slider {
+  min-height: 905px;
+  margin-top: 39px;
+  overflow: hidden;
+  &-title {
+    @include lato-heavy;
+    font-size: 62px;
+    line-height: 74px;
+    text-align: center;
+  }
+  &-description {
+    max-width: 910px;
+    margin: 42px auto 139px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: $black-light;
+  }
+  .iphone {
+    top: auto;
+    bottom: -11%;
+  }
+  .slider-items {
+    position: absolute;
+    top: 51%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 34px;
+  }
+  &-item {
+    flex: 320px 1 0;
+    max-width: 320px;
+    height: 140px;
+    margin: 0 15px;
+    cursor: pointer;
+    &:first-child {
+      margin-top: 30px;
+      background: url("/img/bubbles/Bubble-1.png") 5px 0 no-repeat;
+      background-size: 100%;
+      transform: rotate(-3deg);
+
+    }
+    &:nth-child(2) {
+      margin-top: 13px;
+      background: url("/img/bubbles/Bubble-2.png") 5px 0 no-repeat;
+      background-size: 100%;
+      transform: rotate(-2deg);
+    }
+    &:nth-child(3) {
+      background: url("/img/bubbles/Bubble-3.png") 5px 0 no-repeat;
+      background-size: 100%;
+
+    }
+    &:nth-child(4) {
+      margin-top: 6px;
+      background: url("/img/bubbles/Bubble-4.png") 5px 0 no-repeat;
+      background-size: 100%;
+      transform: rotate(2deg);
+    }
+    &:last-child {
+      margin-top: 20px;
+      background: url("/img/bubbles/Bubble-5.png") 5px 0 no-repeat;
+      background-size: 100%;
+      transform: rotate(3deg);
+    }
+  }
+}
